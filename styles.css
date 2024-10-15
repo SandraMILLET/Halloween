@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  height:100%;
+  background: rgb(166,194,244);
+  background: linear-gradient(186deg, rgba(0,0,0,1) 14%, rgba(255,127,0,1) 39%, rgba(255,255,255,1) 61%, rgba(128,0,128,1) 90%, rgba(0,0,0,1) 96%);}
+
+.container-fluid{
+  width: 100%;
+}
+/*menu*/
+  .barnav  {
+  max-width: 100%;
+  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.barnav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.barnav ul li {
+  display: inline-block;
+}
+
+.barnav ul li a {
+  padding: 22px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.barnav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: #ff7f00;
+  color:#800080;
+  font-weight: 500;
+}
+
+/*titre*/
+.titre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  text-align: center;
+}
+
+.neonText {
+  letter-spacing:1.5em;
+  margin-right: 5px;
+  margin-left: 15px;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #800080,
+      0 0 82px #f8ebf8,
+      0 0 92px #800080,
+      0 0 102px #f0eef0,
+      0 0 151px #800080;
+
+
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #800080,
+      0 0 80px #800080,
+      0 0 90px #800080,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+.logo{
+  width: 30%;
+}
+
+/*landing*/
+.landing{
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+
+
+/*a propos de moi*/
+.presentation{
+  text-transform: none;
+  font-size: 18px;
+}
+/**/
+.services{
+  width : 100%;
+  object-position: center;
+}
+a.service{
+  text-transform: none;
+}
+img.img-service{
+  width: 100%;
+}
+
+.titre h1{
+  font-family: 'Yeseva One';
+  font-size: 42px;
+}
+h2 {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding: 20px;
+}
+
+h3 a{
+  margin: 25px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  text-decoration:none;
+  color: #800000;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+h3 a:hover{
+  text-decoration:none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h5{
+  font-size: 22px;
+}
+
+p.story{
+  color: #000000;
+  font-size: 18px;
+  text-transform: none;
+
+}
+img.story{
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+h3.titreA{
+  color: #800800;
+  font-size: 32px;
+  margin-bottom: 35px;
+  margin-top: 25px;
+}
+
+img.chasse{
+  width: 100%;
+}
+
+/*footer*/
+.col-footer{
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+.col-footer ul{
+  list-style-type: none;
+}
+.col-footer ul li a{
+  text-decoration:none;
+  color: white;
+}
+.col-footer ul li a:hover{
+  color: #800080;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+
+
+.soustitre {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration:none;
+  color: #800000;
+}
+
+
+
+.container1{
+  margin-bottom : 25px;
+}
+
+.Thistoire
+{
+  margin :10px;
+  text-transform: none;
+  color: #ff7f00;
+}
+
+
+/*QUIZZ*/
+body.bg-quizz{
+  background-color: #000000;
+}
+label.labelQ{
+  margin-right: 45px;
+}
+label.letter{
+  margin-right : 15px;
+}
+h3.question{
+  color: #000000;
+  font-size: 28px;
+}
+span.question{
+  font-size: 18;
+  color:#800000;
+}
+.letter {
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  background-color: #000000;
+  padding: 1px 3px;
+}
+
+input:checked + .letter {
+  background-color: slateblue;
+}
+
+input {
+  display: none;
+}
+.labelQ:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  line-height: none;
+  padding: 1rem 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 20px;
+  background-color: #800080;
+  color: white;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:disabled {
+  background-color: #ff7f00;
+  margin-bottom: 25px;
+}
+button:disabled a {
+  pointer-events: none;
+}
+
+#score {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #800080;
+}
+img.cocktail{
+  width: 100%;
+  object-position: center;
+}
+
+
+img.filmsA{
+  width: 300px;
+  height: 400px;
+  margin-bottom: 50px;
+  margin-top: 35px;
+}
+
+p.avertissement{
+color: #0fa;
+}
+
+.resp-container { 
+  position: relative; 
+  overflow: hidden; 
+  padding-top: 56.25%; 
+}
